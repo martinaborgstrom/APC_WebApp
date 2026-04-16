@@ -3,6 +3,14 @@ Realizzazione di un'applicazione web relativa ad una pescheria:
 
 <img width="3042" height="1561" alt="image" src="https://github.com/user-attachments/assets/45361917-8056-4372-bc40-2fe606b3209a" />
 
+Attraverso questa application un:
+- ristorante può:
+  - visualizzare le pescherie presenti e i loro prodotti con rispettivi prezzi;
+  - può acquistare un prodotto e ricevere una mail di conferma dell'ordine;
+- fattorino può:
+  - consultare il sito per avere una lista delle pescherie dalle quali prelevare i prodotti da consegnare;
+  - può inoltre contrassegnare come terminato un ordine.
+
 ### How to start
 Per l'avvio è richiesta l'installazione di:
 - Node.js
