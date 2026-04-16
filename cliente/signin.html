@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+    <!-- INIZIO HEAD HTML -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" href="img/login.png" type="image/x-icon">
+        <title>Signin</title>
+        
+        <!-- COLLEGAMENTO CSS -->
+        <link rel="stylesheet" href="stylesheets/signin.css">
+    
+        
+        <!-- INSERIMENTO ICON NEL TESTO -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <!-- FINE HEAD -->
+    <!-- INIZIO BODY -->
+    <body>
+        <!-- INIZIO HEADER -->
+        <header>
+            <div class="logo">
+                <img src="img/osolemio_icon.png" alt="">
+                <h4> O' sole mio</h4>
+            </div>
+        </header>
+        <!-- FINE HEADER -->
+
+        <!-- Video di sfondo -->
+        <video src="img/video (2160p).mp4" id="myVideo"></video>
+        
+        <!-- INIZIO MAIN -->
+        <main>
+            <form class="form">
+                <div class="form-title">
+                    <h1>Signin</h1>
+                </div>
+        
+                <div class="form-field">
+                    <!-- Nome del ristorante -->
+                    <div class="form-field-input">
+                        <input id="nome" class="js-nome">
+                        <label for="nome">Nome ristorante</label>
+                        <ion-icon name="restaurant-outline" class="icon"></ion-icon>
+                    </div>
+                    
+                    <!-- Indirizzo -->
+                    <div class="form-field-input">
+                        <input id="indirizzo" class="js-indirizzo">
+                        <label for="indirizzo">Indirizzo</label>
+                        <ion-icon name="home-outline" class="icon"></ion-icon>
+                    </div>
+
+                    <!-- Numero di telefono -->
+                    <div class="form-field-input">
+                        <input id="telefono" class="js-telefono" type="number" max="10">
+                        <label for="telefono">Numero di telefono</label>
+                        <ion-icon name="call-outline" class="icon"></ion-icon>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-field-input">
+                        <input id="email" class="js-email" type="email">
+                        <label for="email">Email</label>
+                        <ion-icon name="mail-outline" class="icon"></ion-icon>
+                    </div>
+
+                    <!-- Username -->
+                    <div class="form-field-input">
+                        <input id="user" class="js-user" type="text" autocomplete="username">
+                        <label for="user">Username</label>
+                        <ion-icon name="person-outline" class="icon"></ion-icon>
+                    </div>
+        
+                    <!-- Password -->
+                    <div class="form-field-input">
+                        <input id="password" class="js-pass" type="password" autocomplete="current-password">
+                        <label for="password">Password</label>
+                        <ion-icon name="eye-outline" class="showpass"></ion-icon>
+                        <ion-icon name="eye-off-outline"class="hidepass"></ion-icon>        
+                    </div>
+        
+                    <!-- Bottoni login e signin -->
+                    <div>
+                        <!-- Termini d'uso -->
+                        <div class="form-field-remember-forgot">
+                            <label><input type="checkbox" id="checkbox"> Accetto i termini e le condizioni</label>
+                        </div>
+                        <button class="signin-btn">Signin</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <!-- FINE MAIN -->
+
+        <!-- JAVASCRIPT -->
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="js/signin.js"></script>
+    </body>
+    <!-- FINE BODY -->
+</html>

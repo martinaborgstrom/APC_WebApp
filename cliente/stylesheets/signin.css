@@ -1,0 +1,159 @@
+/* SELETTORE UNIVERSALE */
+*{
+    font-family: "Century Gothic", Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+/* BODY CSS */
+body{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack children verticalmente */
+    align-items: center; /* Centro il contenuto orizzontalmente */
+    justify-content: center; /* Centro il contenuto verticalmente */
+    overflow: hidden;
+}
+
+/* HEADER CSS */
+header{
+    z-index: 1;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#myVideo{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    position: absolute;
+    filter: blur(5px);
+}
+
+main{
+    font-weight: 500;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+
+.form{
+    width: min(100%, 350px);
+    padding: 40px;
+    z-index: 1;
+
+}
+
+.form-title{
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-title::before{
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: 0;
+}
+
+.form-field{
+    display: grid;
+    gap: .8rem;
+}
+
+.form-field-input{
+    position: relative;
+}
+
+.form-field-input input{
+    width: 100%;
+    padding: 20px 0px 5px;
+    background: transparent;
+    font-size: 1rem;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    transition: .3s ease;
+}
+
+.form-field-input label{
+    position: absolute;
+    left: 0px;
+    top: 13px;
+    pointer-events: none;
+    transition: .3s ease;
+}
+
+.form-field-input input:focus{
+    border-bottom: 3px solid rgb(255, 204, 0);
+}
+
+.active label{
+    top: 5px;
+    font-size: .8rem;
+    color: rgb(255, 204, 0);
+}
+
+.signin-btn{
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 13px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100%;
+    font-size: .9em;
+    color: #000;
+    background-color: rgb(255, 204, 0);
+    margin: 25px 0 10px;
+}
+
+.signin-btn:hover{
+    font-weight: bold;
+    border: 2px solid #000;
+    text-transform: uppercase;
+}
+
+.hidepass, .showpass, .icon{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 1.2rem;
+}
+
+.hidepass, .showpass{
+    cursor: pointer;
+}
+
+.form-field-remember-forgot{
+    font-size: .9em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-register{
+    font-size: .9em;
+    text-align: center;
+}

@@ -1,0 +1,16 @@
+[
+    {
+    "_id": {
+        "$oid": "65bbb858418369b3c72cc021"
+    },
+    "nome": "Bel Mare",
+    "indirizzo": "Via Posillipo 10",
+    "telefono": {
+        "$numberLong": "3317557722"
+    },
+    "email": "martibor2002@gmail.com",
+    "user": "bel_mare",
+    "password": "bel_mare",
+    "__v": 0
+    }
+]

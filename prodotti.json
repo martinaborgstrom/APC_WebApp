@@ -1,0 +1,32 @@
+[
+  {
+    "_id": {
+      "$oid": "65c340ed3368e127f9d31cbb"
+    },
+    "codice": 1,
+    "tipologia": "allevamento",
+    "categoria": "pesce",
+    "descrizione": "Sogliola",
+    "costo": 18
+  },
+  {
+    "_id": {
+      "$oid": "65c340ed3368e127f9d31cbc"
+    },
+    "codice": 2,
+    "tipologia": "congelato",
+    "categoria": "pesce",
+    "descrizione": "Granchio",
+    "costo": 12
+  },
+  {
+    "_id": {
+      "$oid": "65c392a1077467184b250a14"
+    },
+    "codice": 3,
+    "tipologia": "surgelato",
+    "categoria": "mollusco",
+    "descrizione": "Polpo",
+    "costo": 10
+  }
+]

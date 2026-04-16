@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+    <!-- INIZIO HEAD HTML -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>O' sole mio</title>
+        <link rel="icon" href="img/osolemio_icon.png" type="image/x-icon">
+        
+        <!-- COLLEGAMENTO CSS -->
+        <link rel="stylesheet" href="stylesheets/home.css">
+
+        <!-- INSERIMENTO ICON NEL TESTO -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <!-- FINE HEAD -->
+    <!-- INIZIO BODY -->
+    <body>
+        <!-- Video di sfondo -->
+        <video src="img/video (2160p).mp4" id="myVideo"></video>
+        <header>
+            <div class="logo-box">
+                <div class="logo">
+                    <img src="img/osolemio_icon.png" alt="">
+                    <h4> O' sole mio</h4>
+                </div>
+            </div>
+            <div class="container">
+                <div class="tabs">
+                    <a href=""><span class="active">Ristorante</span></ion-icon></a>
+                    <a href=""><span>Pescheria</span></ion-icon></a>
+                    <a href=""><span>Fattorino</span></ion-icon></a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- INIZIO MAIN -->
+        <main>
+            <!-- Contenitore prodotti -->
+            <div class="form">
+                <div class="products"></div>
+                <div class="fattorino"></div>
+                <div class="notify"></div>
+            </div>
+
+            <div class="camioncino"></div>
+            <div class="work_in_progress"></div>
+            
+            <!-- Carrello -->
+            <div class="cart">
+                <h2>Carrello (0 elementi)</h2>
+                <ul class="cart-items"></ul>
+                <p class="cart-total">Totale: €0.00</p>
+                <button class="checkoutBtn">Invia mail</button>
+            </div>
+            
+        </main>
+        <!-- FINE MAIN -->
+        
+        <!-- JAVASCRIPT -->
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="js/home.js"></script>
+        
+    </body>
+    <!-- FINE BODY -->
+</html>

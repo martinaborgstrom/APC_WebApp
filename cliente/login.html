@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+    <!-- INIZIO HEAD HTML -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" href="img/login.png" type="image/x-icon">
+        <title>Login</title>
+        
+        <!-- COLLEGAMENTO CSS -->
+        <link rel="stylesheet" href="stylesheets/login.css">
+
+        <!-- INSERIMENTO ICON NEL TESTO -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <!-- FINE HEAD -->
+    <!-- INIZIO BODY -->
+    <body>
+        <!-- INIZIO HEADER -->
+        <header>
+            <div class="logo">
+                <img src="img/osolemio_icon.png" alt="">
+                <h4> O' sole mio</h4>
+            </div>
+        </header>
+        <!-- FINE HEADER -->
+
+        <!-- Video di sfondo -->
+        <video src="img/video (2160p).mp4" id="myVideo"></video>
+        
+        <!-- INIZIO MAIN -->
+        <main>
+            <form class="form">
+                <div class="form-title">
+                    <h1>Login</h1>
+                </div>
+
+                <div class="form-field">
+                    <!-- Username -->
+                    <div class="form-field-input">
+                        <input id="user" class="js-user" type="text" autocomplete="username">
+                        <label for="user">Username</label>
+                        <ion-icon name="person-outline" class="username"></ion-icon>
+                    </div>
+        
+                    <!-- Password -->
+                    <div class="form-field-input">
+                        <input id="password" class="js-pass" type="password" autocomplete="current-password">
+                        <label for="password">Password</label>
+                        <ion-icon name="eye-outline" class="showpass"></ion-icon>
+                        <ion-icon name="eye-off-outline"class="hidepass"></ion-icon>        
+                    </div>
+        
+                    <!-- Bottoni login e signin -->
+                    <div>
+                        <div class="form-field-remember-forgot">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <button class="login-btn">Login</button>
+                        <div class="login-register">
+                            <p>Don't have an account? <a href="#" class="secondary-btn">Register</a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <!-- FINE MAIN -->
+
+        <!-- JAVASCRIPT -->
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+    <!-- FINE BODY -->
+</html>

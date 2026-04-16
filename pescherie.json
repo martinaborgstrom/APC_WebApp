@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "65c340dc3368e127f9d31cb8"
+  },
+  "nome": "Mare in tavola",
+  "indirizzo": "Via Posillipo 45",
+  "email": "martibor2002@gmail.com",
+  "user": "mare_in_tavola",
+  "password": "mare_in_tavola",
+  "prodotti": [
+    {
+      "codice": 1,
+      "tipologia": "allevamento",
+      "categoria": "pesce",
+      "descrizione": "Sogliola",
+      "costo": 18
+    },
+    {
+      "codice": 2,
+      "tipologia": "congelato",
+      "categoria": "pesce",
+      "descrizione": "Granchio",
+      "costo": 12
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65c3923a077467184b250a12"
+  },
+  "nome": "Addor e mar",
+  "indirizzo": "Via Marina 20",
+  "email": "martibor2002@gmail.com",
+  "user": "addor_e_mar",
+  "password": "addor_e_mar",
+  "prodotti": [
+    {
+      "codice": 3,
+      "tipologia": "surgelato",
+      "categoria": "mollusco",
+      "descrizione": "Polpo",
+      "costo": 10
+    }
+  ]
+}]
