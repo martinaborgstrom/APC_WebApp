@@ -19,13 +19,16 @@ Per l'avvio è richiesta l'installazione di:
 - npm
 - MongoDB Compass
 
-Per utilizzare il database, è necessario creare la collection ```osolemio``` in MongoDB Compass. Per popolare il database aggiungere i file json:
-- pescherie.json
-- prodotti.json
-- ristoranti.json
-- spese.json
+Per utilizzare il database, è necessario creare la collection ```osolemio``` in MongoDB Compass.
 
-Una volta fatto ciò, è possibile accedere alla directory e avviare il progetto:
+Creare un file ```.env``` per le variabili d'ambiente contentente i seguenti elementi:
+```
+USERNAME = <username>
+PASSWORD = <password>
+SERVICE = <service>
+```
+
+Per avviare la web application è sufficiente accedere alla directory e avviare il progetto:
 ```
 cd APC_WebApp
 node server.js
