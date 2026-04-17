@@ -2,6 +2,7 @@ var http = require('http'); // per la creazione del server HTTP
 var express = require('express'); // per l'invio di file HTML, CSS
 var mongoose = require('mongoose'); // per utilizzare MongoDB
 const nodemailer = require('nodemailer'); // per utilizzare il servizio mail 
+require('dotenv').config()
 
 var app = express();
 
@@ -252,10 +253,10 @@ app.post('/inviaEmail', async (req, res) => {
     // - auth: identifica l'username e la password del mittente
     // - tls: protocllo usato per garantire la sicurezza in rete
     const transporter = nodemailer.createTransport({
-        service: 'outlook',
+        service: process.env.SERVICE,
         auth: {
-        user: 'o_solemio_group@outlook.it',
-        pass: '0s0l4m10'
+        user: process.env.USERNAME,
+        pass: process.env.PASSWORD
         },
         tls: {
             rejectUnauthorized: false //non devono essere rifiutate connessioni con certificato non valido
@@ -268,7 +269,7 @@ app.post('/inviaEmail', async (req, res) => {
     // - subject: l'oggetto della mail
     // - text: il corpo del messaggio
     const mailOptions = {
-        from: 'o_solemio_group@outlook.it',
+        from: process.env.USERNAME,
         to: destinatario,
         subject: oggetto,
         text: corpoMessaggio
